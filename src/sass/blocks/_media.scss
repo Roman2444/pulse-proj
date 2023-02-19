@@ -12,6 +12,9 @@
         &__subheader {
             font-size: 20px; 
         }
+        &__wrapper {
+            align-items:center;
+        }
     }
 }
 
@@ -61,7 +64,6 @@
     }
     .promo {
         &__wrapper {
-            align-items:center;
             margin-top: 45px;
         }
         &__icons {
