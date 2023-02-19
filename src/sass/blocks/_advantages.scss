@@ -4,9 +4,11 @@
     &__list {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 65px;
     }
+
     &__item {
         display: flex;
         flex-direction: column;
@@ -17,6 +19,8 @@
             display: block;
             margin: 0 auto;
         }
+
+
         &__subtitle {
             margin-top: 38px;
             font-size: 18px;
@@ -35,6 +39,9 @@
                 text-decoration: underline;
             }     
         }
+    }
 
+    &__item:not(:last-child) {
+        margin: 0 15px 40px 0;
     }
 }

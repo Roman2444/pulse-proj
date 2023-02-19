@@ -29,6 +29,7 @@
         width: 425px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__icon {
         width: 106px;
@@ -42,6 +43,9 @@
             margin: 0 auto;
             margin-bottom: 20px;
         }
+    }
+    &__icon:not(:last-child) {
+        margin: 0 15px 0 0;
     }
     &__link {
         margin-top: 18px;
