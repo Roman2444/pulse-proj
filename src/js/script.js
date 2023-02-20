@@ -20,3 +20,13 @@ var slider = tns({
     slideBy: 'page',
     autoplay: false
   });
+
+  const left = document.querySelector('[data-controls=prev]');
+  left.innerHTML=`
+  <img src="icons/left.png" alt="left">
+  `;
+
+  const right = document.querySelector('[data-controls=next]');
+  right.innerHTML=`
+  <img src="icons/right.png" alt="left">
+  `;
