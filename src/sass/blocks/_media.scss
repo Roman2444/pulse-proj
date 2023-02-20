@@ -16,6 +16,20 @@
             align-items:center;
         }
     }
+    .consultation {
+        &__descr {
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+    }
+    .feed-form {
+        margin: 36px auto 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -47,6 +61,9 @@
         &__official {
             display: none;
         }
+    }
+    .title {
+        font-size: 25px;
     }
 }
 
