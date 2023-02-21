@@ -10,6 +10,16 @@ const slider = tns({
       '<img src="icons/left.png" alt="left">',
       '<img src="icons/right.png" alt="right">'
     ],
+    responsive: {
+      900: {
+        nav: false,
+        controls: true
+      }, 
+      300: {
+        nav: true,
+        controls: false
+      }
+    }
 
   });
 
