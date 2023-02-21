@@ -4,6 +4,11 @@
         position:relative;
         width: 750px;
         margin: 0 auto;
+        div {
+            img {
+                width: 80%;
+            }
+        }
     }
     [data-controls=prev], [data-controls=next] {
         border: none;
@@ -17,12 +22,42 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: -66px;
+        left: 0px;
+        z-index: 2;
     }
     [data-controls=next] {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right:-66px;
+        right:0px;
+        z-index: 2;
     }
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .tns-nav {
+        position: absolute;
+        bottom: -20px;
+        right: 50%;
+        transform: translateX(50%);
+        button {
+            background-color: $main_color;
+            width: 40px;
+            height: 10px;
+            border: none;
+        }
+        button:not(:last-child) {
+            margin-right: 20px;
+        }
+        .tns-nav-active {
+            background-color:#7d0303;
+        }
+
+    }
+
 }
