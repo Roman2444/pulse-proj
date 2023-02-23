@@ -46,5 +46,18 @@ const slider = tns({
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
 
+    $('[data-modal="consultaion"]').on('click', function() {
+      $('.overlay, #consultaion').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+      $('.overlay, #consultaion, #thanks, #order').fadeOut('slow');
+    }); 
+
+    $('.button_mini').each(function(i) {
+      $(this).on('click', function() {
+        $('#order .modal__text').text($('.catalog-item__subtitle').eq(i).text());
+        $('.overlay, #order').fadeIn('slow');
+      })
+    });
   });
 })(jQuery);
