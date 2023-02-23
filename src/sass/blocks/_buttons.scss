@@ -12,8 +12,7 @@
     color: #ffffff;
     transition: 0.5s all;
     &:hover {
-        box-shadow: 5px 5px 15px rgb(13, 13, 33);
-        border: none;
+        +hover_color
     }
     &_main {
         margin-top: 67px;
